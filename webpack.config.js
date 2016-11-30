@@ -16,14 +16,16 @@ module.exports = {
       '',
       '.ts',
       '.tsx',
-      '.js'
-    ]
+      '.js',
+      '.jsx'
+    ],
+    modulesDirectories: ['src', 'node_modules']
   },
   module: {
     loaders: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader'
+        loaders: ['babel', 'ts-loader']
       }
     ],
     preLoaders: [

@@ -1,7 +1,7 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Game from './components/Game';
+import Game from 'components/Game';
 
 const Index = () => (
   <h1>Hello World!</h1>
