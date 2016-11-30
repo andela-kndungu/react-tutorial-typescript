@@ -1,0 +1,30 @@
+{
+  "name": "react-tutorial-typescript",
+  "version": "1.0.0",
+  "description": "The current official React tutorial implemented in Typescript",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "url": "git@github.com:andela-kndungu/react-tutorial-typescript.git",
+    "type": "git"
+  },
+  "author": "Kinuthia Ndung'u <kinuthia.ndungu@andela.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^4.0.2",
+    "tslint-eslint-rules": "^3.1.0",
+    "typescript": "^2.0.10",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "@types/react": "^0.14.51",
+    "@types/react-dom": "^0.14.19",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.2.2"
+  }
+}
