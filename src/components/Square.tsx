@@ -5,33 +5,19 @@ interface SquareProps {
   onClick: () => any;
 }
 
-interface SquareState {
-  value: string;
-}
-
-class Square extends React.Component< SquareProps, SquareState > {
-  constructor() {
-    super();
-
-    this.state = {
-      value: ''
-    };
-  }
-
-  render() {
-    return (
-      <button
-        className="square"
-        onClick={
-          () => (
-            this.setState({ value: 'X' })
-          )
-        }
-      >
-        {this.props.value}
-      </button>
-    );
-  }
-}
+const Square = (props: SquareProps) => (
+  (
+    <button
+      className="square"
+      onClick={
+        () => (
+          props.onClick()
+        )
+      }
+    >
+      {props.value}
+    </button>
+  )
+);
 
 export default Square;

@@ -4,7 +4,9 @@ import Board from './Board';
 
 interface GameProps {};
 
-class Game extends React.Component< GameProps, {} > {
+
+
+class Game extends React.Component < GameProps, {} > {
   render() {
     return (
       <div className="game">
